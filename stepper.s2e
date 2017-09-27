@@ -3,7 +3,7 @@
    "description": "A mblock extension for the Stepper motor library",
    "version": "1.2",
    "author": "Thomas Goorden (thomas.goorden@gmail.com)",
-   "homepage": "",
+   "homepage": "https://github.com/tgoorden/mblock-stepper",
    "sort":0,
    "javascriptURL":"",
      "firmware":"1.2",
