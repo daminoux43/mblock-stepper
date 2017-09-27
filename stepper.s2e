@@ -1,0 +1,97 @@
+{   
+   "extensionName": "stepper",
+   "description": "A mblock extension for the Stepper motor library",
+   "version": "1.2",
+   "author": "Thomas Goorden (thomas.goorden@gmail.com)",
+   "homepage": "",
+   "sort":0,
+   "javascriptURL":"",
+     "firmware":"1.2",
+     "extensionPort":0,
+   "blockSpecs": [
+      [
+         "w",
+         "init Stepper %n : %n steps per rev, %n rpm, PINS  %n , %n , %n , %n",
+         "initStepper",
+         "1",
+         "1500",
+         "20",
+         "8",
+         "10",
+         "9",
+         "11",
+         {
+            "setup":"stepper_{0}.setSpeed({2});\n",
+            "inc":"#include \"Stepper.h\"\n",
+            "def":"Stepper stepper_{0}({1},{3},{4},{5},{6});\n",
+            "work":"",
+            "loop":""
+         }
+      ],
+      [
+         "w",
+         "init Stepper %n : %n steps per rev, %n rpm, PINS  %n , %n",
+         "initStepper",
+         "1",
+         "1500",
+         "20",
+         "8",
+         "10",
+         "9",
+         "11",
+         {
+            "setup":"stepper_{0}.setSpeed({2});\n",
+            "inc":"#include \"Stepper.h\"\n",
+            "def":"Stepper stepper_{0}({1},{3},{4});\n",
+            "work":"",
+            "loop":""
+         }
+      ],
+      [
+         "w",
+         "init Stepper %n : %n steps per rev, %n rpm, PINS  %n , %n , %n , %n , %n",
+         "initStepper",
+         "1",
+         "1500",
+         "20",
+         "8",
+         "10",
+         "9",
+         "11",
+         "12"
+         {
+            "setup":"stepper_{0}.setSpeed({2});\n",
+            "inc":"#include \"Stepper.h\"\n",
+            "def":"Stepper stepper_{0}({1},{3},{4},{5},{6},{7});\n",
+            "work":"",
+            "loop":""
+         }
+      ],
+      [
+         "w",
+         "turn Stepper %n by %n step(s)",
+         "step",
+         "1",
+         "120",
+         {
+            "setup":"",
+            "inc":"",
+            "def":"",
+            "work":"stepper_{0}.step({1});\n",
+            "loop":""
+         }
+      ]
+   ],
+   "menus": {
+   },
+   "values":{
+   },
+   "translators":{
+      "nl_NL": {
+         "init Stepper %n : %n steps per rev, %n rpm, PINS  %n , %n , %n , %n":"initialiseer Stepper %n : %n stappen/rotatie , %n rpm, PINS  %n , %n , %n , %n",
+         "init Stepper %n : %n steps per rev, %n rpm, PINS  %n , %n":"initialiseer Stepper %n : %n stappen/rotatie , %n rpm, PINS  %n , %n",
+         "init Stepper %n : %n steps per rev, %n rpm, PINS  %n , %n , %n , %n , %n":"initialiseer Stepper %n : %n stappen/rotatie , %n rpm, PINS  %n , %n , %n , %n , %n",
+         "turn Stepper %n by %n step(s)":"draai Stepper %n met %n stappen"
+      }
+   }
+}
