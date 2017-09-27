@@ -1,13 +1,13 @@
 {   
    "extensionName": "stepper",
    "description": "A mblock extension for the Stepper motor library",
-   "version": "1.2",
+   "version": "1.0",
    "author": "Thomas Goorden (thomas.goorden@gmail.com)",
    "homepage": "https://github.com/tgoorden/mblock-stepper",
    "sort":0,
    "javascriptURL":"",
-     "firmware":"1.2",
-     "extensionPort":0,
+   "firmware":"1.2",
+   "extensionPort":0,
    "blockSpecs": [
       [
          "w",
@@ -58,7 +58,7 @@
          "10",
          "9",
          "11",
-         "12"
+         "12",
          {
             "setup":"stepper_{0}.setSpeed({2});\n",
             "inc":"#include \"Stepper.h\"\n",
