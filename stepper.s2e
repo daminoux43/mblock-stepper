@@ -1,9 +1,9 @@
 {   
-   "extensionName": "stepper",
-   "description": "A mblock extension for the Stepper motor library",
+   "extensionName": "Moteur pas a pas",
+   "description": "Extension Mblock ",
    "version": "1.0",
-   "author": "Thomas Goorden (thomas.goorden@gmail.com)",
-   "homepage": "https://github.com/tgoorden/mblock-stepper",
+   "author": "ARNAUD Damien github@daminoux.fr fork from Thomas Goorden (thomas.goorden@gmail.com)",
+   "homepage": "https://github.com/daminoux43/mblock-stepper",
    "sort":0,
    "javascriptURL":"",
    "firmware":"1.2",
@@ -92,6 +92,12 @@
          "init Stepper %n : %n steps per rev, %n rpm, PINS  %n , %n":"initialiseer Stepper %n : %n stappen/rotatie , %n rpm, PINS  %n , %n",
          "init Stepper %n : %n steps per rev, %n rpm, PINS  %n , %n , %n , %n , %n":"initialiseer Stepper %n : %n stappen/rotatie , %n rpm, PINS  %n , %n , %n , %n , %n",
          "turn Stepper %n by %n step(s)":"draai Stepper %n met %n stappen"
+      }
+      "fr_FR": {
+         "initailisation moteur %n : %n pas par rev, %n rpm, PORT  %n , %n , %n , %n":"initialiser moteur %n : %n pas/rotation , %n rpm, PINS  %n , %n , %n , %n",
+         "initailisation moteur %n : %n pas par rev, %n rpm, PINS  %n , %n":"initialiser Moteur %n : %n pas/rotation , %n rpm, PINS  %n , %n",
+         "initailisation moteur %n : %n pas par rev, %n rpm, PINS  %n , %n , %n , %n , %n":"initialiseer Stepper %n : %n pas/rotation , %n rpm, PINS  %n , %n , %n , %n , %n",
+         "faire tourner moteur %n par %n pas":"tourner moteur %n de %n pas"
       }
    }
 }
